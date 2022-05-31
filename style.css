@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10px 10px 10px 10px 10px 1fr 10px 10px 10px 10px 10px;
+    grid-template-areas: " leer1 leer2 icon1 icon2 leer3 h1 icon3 icon4 icon5 icon6 icon7 ";
+    gap: 10px;
+    background-color: chocolate;
+}
+
+.h1 {
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10px 10px repeat(7, 1fr) 10px 10px;
+    grid-template-areas: " leer4 leer5 home about business interview politics travel contact leer6 leer7 ";
+    gap: 10px;
+    background-color: green;
+}
+
+nav div {
+    margin: 10px 20px;
+}
